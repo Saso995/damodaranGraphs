@@ -37,6 +37,19 @@ a:hover, a:active, a:focus {
   text-decoration: none !important;
 }
 
+.aa {
+  font-size: 12px;
+  margin-bottom: 2em;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: grey;
+  display: inline;
+}
+
+.aa:hover {
+  color: black;
+}
+
 p {
   margin-bottom: 1.5em;
 }
@@ -187,7 +200,7 @@ figure figcaption {
   -o-transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-#fh5co-aside #fh5co-main-menu ul li a:hover {
+#fh5co-aside #fh5co-mainmenu ul li a:hover {
   text-decoration: none;
   color: black;
 }

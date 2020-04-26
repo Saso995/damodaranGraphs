@@ -1,8 +1,7 @@
 var express = require("express");
 var app = express();
 var bodyParser = require('body-parser');
-const mongo = require("./db/connection");
-var mong = require('mongodb')
+
 
 
 app.use(bodyParser.json());
@@ -11,13 +10,12 @@ app.use(express.static(__dirname + "/public"));
 
 var PORT = process.env.PORT || 8080;
 
-mongo.connectToServer( function( err, client ) {
-  if (err) console.log(err);
-  app.listen(PORT, function(){
-    console.log("Listening at port 8080");
-  });
+
+app.listen(PORT, function(){
+  console.log("Listening at port 8080");
 });
 
+/*
 app.get('/graphsPage', function (req, res) {
   var db = mongo.getDb();
   pagName = req.query.id
@@ -27,3 +25,4 @@ app.get('/graphsPage', function (req, res) {
     res.send(result)
   });
 })
+*/

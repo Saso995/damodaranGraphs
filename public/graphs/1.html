@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>PivotTable.js</title>
+
+        <!-- external libs from cdnjs -->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.min.css">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.71/jquery.csv-0.71.min.js"></script>
+
+
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/pivottable/2.19.0/pivot.min.css">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pivottable/2.19.0/pivot.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pivottable/2.19.0/d3_renderers.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pivottable/2.19.0/c3_renderers.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pivottable/2.19.0/export_renderers.min.js"></script>
+
+        <style>
+            body {font-family: Verdana;}
+            .node {
+              border: solid 1px white;
+              font: 10px sans-serif;
+              line-height: 12px;
+              overflow: hidden;
+              position: absolute;
+              text-indent: 2px;
+            }
+            .c3-line, .c3-focused {stroke-width: 3px !important;}
+            .c3-bar {stroke: white !important; stroke-width: 1;}
+            .c3 text { font-size: 12px; color: grey;}
+            .tick line {stroke: white;}
+            .c3-axis path {stroke: grey;}
+            .c3-circle { opacity: 1 !important; }
+            .c3-xgrid-focus {visibility: hidden !important;}
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript">
+            $(function(){
+                if(window.location != window.parent.location)
+                    $("<a>", {target:"_blank", href:""})
+                        .text("[pop out]").prependTo($("body"));
+
+                $("#output").pivotUI(
+                    $.csv.toArrays($("#output").text()),
+                    $.extend({
+                        renderers: $.extend(
+                            $.pivotUtilities.renderers,
+                            $.pivotUtilities.c3_renderers,
+                            $.pivotUtilities.d3_renderers,
+                            $.pivotUtilities.export_renderers
+                            ),
+                        hiddenAttributes: [""]
+                    }, {})
+                ).show();
+             });
+        </script>
+        <div id="output" style="display: none;">,Country,Moody's rating,CDS,Total ERP (rating),Default Spread (rating),CRP (rating),Total ERP (cds),CRP (cds),Region,GDP (in billions) in 2018
+0,ABU DHABI,Aa2,0.012,0.0692,0.0074,0.0091,0.0749,0.0148,Middle East,253.0
+1,ALBANIA,B1,,0.1425,0.0668,0.0824,,,Eastern Europe & Russia,15.1
+2,ANDORRA,Baa2,,0.0949,0.0282,0.0348,,,Western Europe,3.24
+3,ANGOLA,B3,0.2088,0.1792,0.0965,0.1191,0.3178,0.2577,Africa,105.75
+4,ARGENTINA,Ca,,0.2452,0.15,0.1851,,,Central and South America,519.87
+5,ARMENIA,Ba3,,0.126,0.0534,0.0659,,,Eastern Europe & Russia,12.43
+6,ARUBA,Baa1,,0.0893,0.0237,0.0292,,,Caribbean,2.7
+7,AUSTRALIA,Aaa,0.002,0.0601,0.0,0.0,0.0626,0.0025,Australia & New Zealand,1433.9
+8,AUSTRIA,Aa1,0.0,0.0674,0.0059,0.0073,0.0601,0.0,Western Europe,455.29
+9,AZERBAIJAN,Ba2,,0.1151,0.0446,0.055,,,Eastern Europe & Russia,46.94
+10,BAHAMAS,Baa3,,0.1004,0.0326,0.0403,,,Caribbean,12.42
+11,BAHRAIN,B2,0.0451,0.1608,0.0816,0.1007,0.1157,0.0556,Middle East,37.75
+12,BANGLADESH,Ba3,,0.126,0.0534,0.0659,,,Asia,274.02
+13,BARBADOS,Caa1,,0.1973,0.1112,0.1372,,,Caribbean,5.15
+14,BELARUS,B3,,0.1792,0.0965,0.1191,,,Eastern Europe & Russia,59.66
+15,BELGIUM,Aa3,0.0021,0.0712,0.009,0.0111,0.0627,0.0026,Western Europe,542.76
+16,BELIZE,B3,,0.1792,0.0965,0.1191,,,Central and South America,1.87
+17,BENIN,B2,,0.1608,0.0816,0.1007,,,Africa,10.35
+18,BERMUDA,A2,,0.0756,0.0126,0.0155,,,Caribbean,5.57
+19,BOLIVIA,B1,,0.1425,0.0668,0.0824,,,Central and South America,40.29
+20,BOSNIA AND HERZEGOVINA,B3,,0.1792,0.0965,0.1191,,,Eastern Europe & Russia,20.16
+21,BOTSWANA,A2,,0.0756,0.0126,0.0155,,,Africa,18.62
+22,BRAZIL,Ba2,0.0307,0.1151,0.0446,0.055,0.098,0.0379,Central and South America,1868.63
+23,BULGARIA,Baa2,0.0052,0.0949,0.0282,0.0348,0.0665,0.0064,Eastern Europe & Russia,65.13
+24,BURKINA FASO,B2,,0.1608,0.0816,0.1007,,,Africa,14.12
+25,CAMBODIA,B2,,0.1608,0.0816,0.1007,,,Asia,24.54
+26,CAMEROON,B2,0.0488,0.1608,0.0816,0.1007,0.1204,0.0603,Africa,38.68
+27,CANADA,Aaa,0.001,0.0601,0.0,0.0,0.0613,0.0012,North America,1713.34
+28,CAPE VERDE,B2,,0.1608,0.0816,0.1007,,,Africa,1.9
+29,CAYMAN ISLANDS,Aa3,,0.0712,0.009,0.0111,,,Caribbean,5.14
+30,CHILE,A1,0.0135,0.073,0.0104,0.0129,0.0768,0.0167,Central and South America,298.23
+31,CHINA,A1,0.0062,0.073,0.0104,0.0129,0.0677,0.0076,Asia,13608.15
+32,COLOMBIA,Baa2,0.0254,0.0949,0.0282,0.0348,0.0915,0.0314,Central and South America,331.05
+33,CONGO (DEMOCRATIC REPUBLIC),Caa1,,0.1973,0.1112,0.1372,,,Africa,47.23
+34,CONGO (REPUBLIC),Caa2,,0.2249,0.1335,0.1648,,,Africa,11.26
+35,COOK ISLANDS,B1,,0.1425,0.0668,0.0824,,,Australia & New Zealand,1.2
+36,COSTA RICA,B2,0.0518,0.1608,0.0816,0.1007,0.124,0.0639,Central and South America,60.13
+37,CÔTE D'IVOIRE,Ba3,,0.126,0.0534,0.0659,,,Africa,43.01
+38,CROATIA,Ba2,0.008,0.1151,0.0446,0.055,0.07,0.0099,Eastern Europe & Russia,60.97
+39,CUBA,Caa2,,0.2249,0.1335,0.1648,,,Caribbean,100.02
+40,CURACAO,Baa1,,0.0893,0.0237,0.0292,,,Caribbean,3.13
+41,CYPRUS,Ba2,0.0099,0.1151,0.0446,0.055,0.0723,0.0122,Western Europe,24.96
+42,CZECH REPUBLIC,Aa3,0.0033,0.0712,0.009,0.0111,0.0642,0.0041,Eastern Europe & Russia,245.23
+43,DENMARK,Aaa,0.0,0.0601,0.0,0.0,0.0601,0.0,Western Europe,355.68
+44,DOMINICAN REPUBLIC,Ba3,,0.126,0.0534,0.0659,,,Caribbean,85.56
+45,ECUADOR,Caa3,,0.243,0.1482,0.1829,,,Central and South America,108.4
+46,EGYPT,B2,0.0644,0.1608,0.0816,0.1007,0.1395,0.0794,Africa,250.89
+47,EL SALVADOR,B3,0.0741,0.1792,0.0965,0.1191,0.1515,0.0914,Central and South America,26.06
+48,ESTONIA,A1,0.0045,0.073,0.0104,0.0129,0.0656,0.0055,Eastern Europe & Russia,30.73
+49,ETHIOPIA,B1,,0.1425,0.0668,0.0824,,,Africa,84.36
+50,FIJI,Ba3,,0.126,0.0534,0.0659,,,Asia,5.54
+51,FINLAND,Aa1,0.0,0.0674,0.0059,0.0073,0.0601,0.0,Western Europe,276.74
+52,FRANCE,Aa2,0.0022,0.0692,0.0074,0.0091,0.0628,0.0027,Western Europe,2777.54
+53,GABON,Caa1,,0.1973,0.1112,0.1372,,,Africa,16.85
+54,GEORGIA,Ba2,,0.1151,0.0446,0.055,,,Eastern Europe & Russia,17.6
+55,GERMANY,Aaa,0.0,0.0601,0.0,0.0,0.0601,0.0,Western Europe,3947.62
+56,GHANA,B3,,0.1792,0.0965,0.1191,,,Africa,65.56
+57,GREECE,B1,0.0192,0.1425,0.0668,0.0824,0.0838,0.0237,Western Europe,218.03
+58,GUATEMALA,Ba1,,0.1058,0.0371,0.0457,,,Central and South America,78.46
+59,GUERNSEY,Baa1,,0.0893,0.0237,0.0292,,,Eastern Europe & Russia,0.5
+60,HONDURAS,B1,,0.1425,0.0668,0.0824,,,Central and South America,23.97
+61,HONG KONG,Aa3,0.0026,0.0712,0.009,0.0111,0.0633,0.0032,Asia,362.68
+62,HUNGARY,Baa3,0.0079,0.1004,0.0326,0.0403,0.0699,0.0098,Eastern Europe & Russia,157.88
+63,ICELAND,A2,0.006,0.0756,0.0126,0.0155,0.0674,0.0073,Western Europe,25.88
+64,INDIA,Baa2,0.0262,0.0949,0.0282,0.0348,0.0924,0.0323,Asia,2718.73
+65,INDONESIA,Baa2,0.027,0.0949,0.0282,0.0348,0.0935,0.0334,Asia,1042.17
+66,IRAQ,Caa1,0.0957,0.1973,0.1112,0.1372,0.1782,0.1181,Middle East,224.23
+67,IRELAND,A2,0.0028,0.0756,0.0126,0.0155,0.0636,0.0035,Western Europe,382.49
+68,ISLE OF MAN,Aa2,,0.0692,0.0074,0.0091,,,Western Europe,6.77
+69,ISRAEL,A1,0.0071,0.073,0.0104,0.0129,0.0688,0.0087,Middle East,370.59
+70,ITALY,Baa3,0.019,0.1004,0.0326,0.0403,0.0836,0.0235,Western Europe,2083.86
+71,JAMAICA,B2,,0.1608,0.0816,0.1007,,,Caribbean,15.71
+72,JAPAN,A1,0.0039,0.073,0.0104,0.0129,0.065,0.0049,Asia,4971.32
+73,JERSEY,A1,,0.073,0.0104,0.0129,,,Western Europe,1.0
+74,JORDAN,B1,,0.1425,0.0668,0.0824,,,Middle East,42.23
+75,KAZAKHSTAN,Baa3,0.0138,0.1004,0.0326,0.0403,0.0771,0.017,Eastern Europe & Russia,179.34
+76,KENYA,B2,0.069,0.1608,0.0816,0.1007,0.1452,0.0851,Africa,87.91
+77,KOREA,Aa2,0.0029,0.0692,0.0074,0.0091,0.0637,0.0036,Asia,1619.42
+78,KUWAIT,Aa2,0.0138,0.0692,0.0074,0.0091,0.0771,0.017,Middle East,140.65
+79,KYRGYZSTAN,B2,,0.1608,0.0816,0.1007,,,Eastern Europe & Russia,8.09
+80,LAOS,B3,,0.1792,0.0965,0.1191,,,Asia,17.95
+81,LATVIA,A3,0.0064,0.0821,0.0178,0.022,0.068,0.0079,Eastern Europe & Russia,34.41
+82,LEBANON,Ca,,0.2452,0.15,0.1851,,,Middle East,56.64
+83,LIECHTENSTEIN,Aaa,,0.0601,0.0,0.0,,,Western Europe,6.21
+84,LITHUANIA,A3,0.0055,0.0821,0.0178,0.022,0.0669,0.0068,Eastern Europe & Russia,53.43
+85,LUXEMBOURG,Aaa,,0.0601,0.0,0.0,,,Western Europe,70.89
+86,MACAO,Aa3,,0.0712,0.009,0.0111,,,Asia,55.08
+87,MACEDONIA,Ba3,,0.126,0.0534,0.0659,,,Eastern Europe & Russia,12.67
+88,MALAYSIA,A3,0.0137,0.0821,0.0178,0.022,0.077,0.0169,Asia,358.58
+89,MALDIVES,B2,,0.1608,0.0816,0.1007,,,Asia,5.33
+90,MALI,B3,,0.1792,0.0965,0.1191,,,Africa,17.16
+91,MALTA,A2,,0.0756,0.0126,0.0155,,,Western Europe,14.55
+92,MAURITIUS,Baa1,,0.0893,0.0237,0.0292,,,Asia,14.22
+93,MEXICO,A3,0.0261,0.0821,0.0178,0.022,0.0923,0.0322,Central and South America,1220.7
+94,MOLDOVA,B3,,0.1792,0.0965,0.1191,,,Eastern Europe & Russia,11.44
+95,MONGOLIA,B3,,0.1792,0.0965,0.1191,,,Asia,13.07
+96,MONTENEGRO,B1,,0.1425,0.0668,0.0824,,,Eastern Europe & Russia,5.5
+97,MONTSERRAT,Baa3,,0.1004,0.0326,0.0403,,,Caribbean,1.5
+98,MOROCCO,Ba1,0.0241,0.1058,0.0371,0.0457,0.0899,0.0298,Africa,117.92
+99,MOZAMBIQUE,Caa2,,0.2249,0.1335,0.1648,,,Africa,14.72
+100,NAMIBIA,Ba2,,0.1151,0.0446,0.055,,,Africa,14.52
+101,NETHERLANDS,Aaa,0.0,0.0601,0.0,0.0,0.0601,0.0,Western Europe,913.66
+102,NEW ZEALAND,Aaa,0.0026,0.0601,0.0,0.0,0.0633,0.0032,Australia & New Zealand,204.92
+103,NICARAGUA,B3,,0.1792,0.0965,0.1191,,,Central and South America,13.12
+104,NIGER,B3,,0.1792,0.0965,0.1191,,,Africa,9.29
+105,NIGERIA,B2,0.0959,0.1608,0.0816,0.1007,0.1784,0.1183,Africa,397.27
+106,NORWAY,Aaa,0.0,0.0601,0.0,0.0,0.0601,0.0,Western Europe,434.17
+107,OMAN,Ba2,0.067,0.1151,0.0446,0.055,0.1428,0.0827,Middle East,79.28
+108,PAKISTAN,B3,0.0654,0.1792,0.0965,0.1191,0.1408,0.0807,Asia,314.59
+109,PANAMA,Baa1,0.0144,0.0893,0.0237,0.0292,0.0778,0.0177,Central and South America,65.06
+110,PAPUA NEW GUINEA,B2,,0.1608,0.0816,0.1007,,,Asia,23.5
+111,PARAGUAY,Ba1,,0.1058,0.0371,0.0457,,,Central and South America,40.5
+112,PERU,A3,0.0131,0.0821,0.0178,0.022,0.0763,0.0162,Central and South America,222.04
+113,PHILIPPINES,Baa2,0.0142,0.0949,0.0282,0.0348,0.0776,0.0175,Asia,330.91
+114,POLAND,A2,0.0055,0.0756,0.0126,0.0155,0.0669,0.0068,Eastern Europe & Russia,585.66
+115,PORTUGAL,Baa3,0.0092,0.1004,0.0326,0.0403,0.0714,0.0113,Western Europe,240.67
+116,QATAR,Aa3,0.0143,0.0712,0.009,0.0111,0.0778,0.0177,Middle East,191.36
+117,ROMANIA,Baa3,,0.1004,0.0326,0.0403,,,Eastern Europe & Russia,239.55
+118,RUSSIA,Baa3,0.0131,0.1004,0.0326,0.0403,0.0763,0.0162,Eastern Europe & Russia,1657.55
+119,RWANDA,B2,0.0235,0.1608,0.0816,0.1007,0.0891,0.029,Africa,9.51
+120,SAUDI ARABIA,A1,0.0774,0.073,0.0104,0.0129,0.1556,0.0955,Middle East,786.52
+121,SENEGAL,Ba3,0.0192,0.126,0.0534,0.0659,0.0838,0.0237,Africa,24.13
+122,SERBIA,Ba3,0.0528,0.126,0.0534,0.0659,0.1252,0.0651,Eastern Europe & Russia,50.6
+123,SINGAPORE,Aaa,0.0099,0.0601,0.0,0.0,0.0724,0.0123,Asia,364.16
+124,SLOVAKIA,A2,,0.0756,0.0126,0.0155,,,Eastern Europe & Russia,105.9
+125,SLOVENIA,Baa1,,0.0893,0.0237,0.0292,,,Eastern Europe & Russia,54.01
+126,SOLOMON ISLANDS,B3,0.0043,0.1792,0.0965,0.1191,0.0654,0.0053,Asia,1.4
+127,SOUTH AFRICA,Ba1,0.0094,0.1058,0.0371,0.0457,0.0717,0.0116,Africa,368.29
+128,SPAIN,Baa1,,0.0893,0.0237,0.0292,,,Western Europe,1419.04
+129,SRI LANKA,B2,0.0433,0.1608,0.0816,0.1007,0.1136,0.0535,Asia,88.9
+130,ST. MAARTEN,Baa3,0.0104,0.1004,0.0326,0.0403,0.0729,0.0128,Caribbean,1.5
+131,ST. VINCENT & THE GRENADINES,B3,,0.1792,0.0965,0.1191,,,Caribbean,0.92
+132,SURINAME,B2,,0.1608,0.0816,0.1007,,,Central and South America,3.59
+133,SWAZILAND,B2,,0.1608,0.0816,0.1007,,,Africa,4.71
+134,SWEDEN,Aaa,,0.0601,0.0,0.0,,,Western Europe,556.09
+135,SWITZERLAND,Aaa,,0.0601,0.0,0.0,,,Western Europe,705.14
+136,TAIWAN,Aa3,0.0,0.0712,0.009,0.0111,0.0601,0.0,Asia,646.0
+137,TAJIKISTAN,B3,0.0,0.1792,0.0965,0.1191,0.0601,0.0,Eastern Europe & Russia,7.52
+138,TANZANIA,B1,,0.1425,0.0668,0.0824,,,Africa,58.0
+139,THAILAND,Baa1,,0.0893,0.0237,0.0292,,,Asia,504.99
+140,TOGO,B3,,0.1792,0.0965,0.1191,,,Africa,5.36
+141,TRINIDAD AND TOBAGO,Ba1,0.0082,0.1058,0.0371,0.0457,0.0702,0.0101,Caribbean,23.81
+142,TUNISIA,B2,,0.1608,0.0816,0.1007,,,Africa,39.87
+143,TURKEY,B1,,0.1425,0.0668,0.0824,,,Western Europe,771.35
+144,TURKS AND CAICOS ISLANDS,Baa1,0.0544,0.0893,0.0237,0.0292,0.1272,0.0671,Caribbean,1.02
+145,UGANDA,B2,0.0501,0.1608,0.0816,0.1007,0.1219,0.0618,Africa,27.46
+146,UKRAINE,Caa1,,0.1973,0.1112,0.1372,,,Eastern Europe & Russia,130.83
+147,UNITED ARAB EMIRATES,Aa2,,0.0692,0.0074,0.0091,,,Middle East,414.18
+148,UNITED KINGDOM,Aa2,0.0809,0.0692,0.0074,0.0091,0.16,0.0999,Western Europe,2855.3
+149,UNITED STATES,Aaa,,0.0601,0.0,0.0,,,North America,20544.34
+150,URUGUAY,B1,0.0018,0.1425,0.0668,0.0824,0.0624,0.0023,Central and South America,59.6
+151,UZBEKISTAN,Baa2,0.0,0.0949,0.0282,0.0348,0.0601,0.0,Eastern Europe & Russia,50.5
+152,VENEZUELA,C,0.0182,0.2452,0.15,0.1851,0.0826,0.0225,Central and South America,100.0
+153,VIETNAM,Ba3,,0.126,0.0534,0.0659,,,Asia,245.21
+154,ZAMBIA,Ca,,0.2452,0.15,0.1851,,,Africa,26.72
+</div>
+    </body>
+</html>

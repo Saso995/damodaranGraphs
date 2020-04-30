@@ -42,10 +42,11 @@
     <body>
         <script type="text/javascript">
             $(function(){
+				/*
                 if(window.location != window.parent.location)
                     $("<a>", {target:"_blank", href:""})
                         .text("[pop out]").prependTo($("body"));
-
+				*/
                 $("#output").pivotUI(
                     $.csv.toArrays($("#output").text()),
                     $.extend({
@@ -56,8 +57,12 @@
                             $.pivotUtilities.export_renderers
                             ),
                         hiddenAttributes: [""]
-                    }, {})
+                    }, {
+                      rows: ["Region", "Country","Moody's rating", "Total ERP (rating)", "Default Spread (rating)", "CRP (rating)","CDS", "Total ERP (cds)", "CRP (cds)", "GDP (in billions) in 2018"],
+                      //cols: ["Country"]
+                    })
                 ).show();
+
              });
         </script>
         <div id="output" style="display: none;">,Country,Moody's rating,CDS,Total ERP (rating),Default Spread (rating),CRP (rating),Total ERP (cds),CRP (cds),Region,GDP (in billions) in 2018

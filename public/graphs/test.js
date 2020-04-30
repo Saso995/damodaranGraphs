@@ -1,5 +1,5 @@
   const capture = () => {
-    const body = document.querySelector('body');
+    const body = document.querySelector('td.pvtRendererArea');
     body.id = 'capture';
     html2canvas(document.querySelector("#capture")).then(canvas => {
       document.body.appendChild(canvas);
@@ -11,6 +11,7 @@
       a.setAttribute('download', 'pivotTable.png');
       a.setAttribute('href', image);
       a.click();
+      canvas.parentNode.removeChild(canvas);
     });
   };
 

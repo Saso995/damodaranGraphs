@@ -124,9 +124,15 @@
 				availability make the historical average no longer a reliable measure of the ERP. However, even with long time periods 
 				of history, the estimate’s standard error is substantial. Another limit of this approach is the survivorship bias: using 
 				historical data from equity markets create a sampling bias because we consider only those company that “survived” up to 
-				date, ignoring the hundreds of companies that have failed.
+				date, ignoring the hundreds of companies that have failed.<br><br>
+				<b>Plot description</b><br><br>
+				This is an interactive plot. It displays the Historical Risk Premium in the US market and information on stocks’ relative 
+				performance year-by-year. Select the trace you want to be displayed by clicking on the legend. Use the slider or select 
+				an area of the plot to focus on a given sub-period. Note that in the top-right corner you can access few more features.
+ 				Every year, the Historical premium is computed as the geometric average excess return of stocks over 10-year US T. Bonds, 
+				over the full sample up to that date. The S&P 500 is used as a proxy of the market portfolio. The 10-year US Treasury Bond 
+				and the 3-month US Treasury Bond are used as proxies of the long-term and short-term risk-free asset, respectively.
 				</p><br><br>
-				<!-- graph here -->
 <div>
                 <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
         <script type="text/javascript">/**
@@ -154,10 +160,6 @@
                 
 </div>
 				<br>
-				<b>Plot description</b><br><br>
-				<p style="text-align: justify;">
-				This is an interactive plot. It displays the Historical Risk Premium in the US market, computed as the geometric average excess return of stocks over 10-year US T. Bonds, over the full sample up to date. Moreover, you can find useful information of stocks’ relative performance year-by-year. The S&P 500 is used as a proxy of the market portfolio. The 10-year US Treasury Bond and the 3-mont US Treasury Bond are used as proxies of the long-term and short-term risk-free asset, respectively.</p><br>
-
 				<b>Summary table</b><br><br>
 				<p style="text-align: justify;">
 				The table below displays the average historical risk premium over three relevant sub-periods: full sample (1928-2019); end of Bretton Woods up to date (1970-2019); financial crisis up to date (2010-2019). The standard error is available only for the arithmetic average.</p><br><br>
@@ -246,7 +248,10 @@
 				<br><br>
 				<b>Final consideration</b><br><br>
 				<p style="text-align: justify;">
-				In business valuation we deal with future expected cash flows. Given the long term view and the considerations above, the geometric average premium over US T. Bonds, based on the full sample, is the best proxy of the ERP among those available within the HRP scope.</p><br><br>
+				In business valuation, we generally assume the investment's expected life is infinite and the discount rate should reflect 
+				this long term view. Given the considerations above, the geometric average premium over US T. Bonds based on the full 
+				sample, seems to be the most appropriate proxy of the ERP, among those available within the HRP scope. It reflects the 
+				assumptions on expected life and adjusts for returns' autocorrelation.</p><br><br>
 
 				
 				<br><br>

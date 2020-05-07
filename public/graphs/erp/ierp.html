@@ -107,14 +107,13 @@
 				<h2>ERP Computation</h2>
 				<div class="row row-bottom-padded-md">
 				<p style="text-align: justify;">
-				One of the factor needed to compute the cost of capital is the equity risk premium (ERP). The ERP is the premium a well-diversified marginal investor requires to hold the market portfolio rather than a risk-free asset.This quantity cannot be directly observed, and it must be estimated using either historical data or market data. Keep in mind there’s no consensus amongst academics and practitioners about the correct measure of the equity risk premium (Fernandez et al., 2017).
-                                In this page we present data relative to the Historical Equity Risk Premium (HRP). The HRP is the premium that stocks have historically earned over riskless securities.
-                                <br><br>The chart below displays data relative to the US market. The average historical equity risk premium is computed as the geometric average excess return of stocks over 10-year US T.Bonds. Moreover, you can find useful information of stocks’ relative performance year-by-year.
-				The S&P 500 is used as a proxy of the market portfolio. The 10-year US Treasury Bond and the 3-mont US Treasury Bond are used as proxies of the long-term and short-term risk-free asset, respectively.
-                                Note that this an interactive plot. If you don’t know how to use it, check our guide: link</p><br>
+				<b>Description</b><br><br>
+				The Implied Equity Risk Premium is the premium implied by market prices. This approach assumes that markets are correctly priced. The main advantage is that it doesn’t require historical data, being a market-based estimate.
+				On the other hand, the estimate is bounded to the specific model used for the valuation and its reliability depends on the inputs to that model. The Implied ERP varies over time as interest rates, earnings and stock prices change.
+				Moreover, it can be very different from the historical premium. A possible way to smooth its variability is to use the average implied premium.
+				</p><br>
 				<!-- graph here -->
 <div>
-    <div>
         
                 <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
         <script type="text/javascript">/**
@@ -133,7 +132,7 @@
                     Plotly.newPlot(
                         'd0f7ccc0-e625-47e6-b69b-2e989c185ea0',
                         [{"marker": {"color": "lightslategrey"}, "name": "T.Bond Rate", "type": "bar", "x": [1960, 1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979, 1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019], "y": [0.0276, 0.0235, 0.0385, 0.0414, 0.0421, 0.0465, 0.0464, 0.057, 0.0616, 0.0788, 0.065, 0.0589, 0.0641, 0.069, 0.074, 0.0776, 0.0681, 0.0778, 0.0915, 0.1033, 0.1243, 0.1398, 0.1047, 0.118, 0.1151, 0.0899, 0.0722, 0.0886, 0.0914, 0.0793, 0.0807, 0.067, 0.0668, 0.0579, 0.0782, 0.0557, 0.0641, 0.0574, 0.0465, 0.0644, 0.0511, 0.0505, 0.0381, 0.0425, 0.0422, 0.0439, 0.047, 0.0402, 0.0221, 0.0384, 0.0329, 0.0188, 0.0176, 0.0304, 0.0217, 0.0227, 0.0245, 0.0241, 0.0268, 0.0192]}, {"marker": {"color": "crimson"}, "name": "Implied Premium", "type": "bar", "x": [1960, 1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979, 1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019], "y": [0.0292, 0.0292, 0.0356, 0.0338, 0.0331, 0.0332, 0.0368, 0.032, 0.03, 0.0374, 0.0341, 0.0309, 0.0272, 0.043, 0.0559, 0.0413, 0.0455, 0.0592, 0.0572, 0.0645, 0.0503, 0.0573, 0.049, 0.0431, 0.0511, 0.0403, 0.0336, 0.0418, 0.0412, 0.0385, 0.0392, 0.0327, 0.0283, 0.0274, 0.0306, 0.0244, 0.0211, 0.0167, 0.0138, 0.012, 0.0165, 0.0173, 0.0229, 0.0212, 0.0202, 0.022, 0.0197, 0.0206, 0.0405, 0.026, 0.0224, 0.0271, 0.0247, 0.0203, 0.0224, 0.0246, 0.0241, 0.0236, 0.025, 0.025]}, {"marker": {"color": "crimson"}, "name": "Implied Premium", "type": "bar", "visible": false, "x": [1960, 1961, 1962, 1963, 1964, 1965, 1966, 1967, 1968, 1969, 1970, 1971, 1972, 1973, 1974, 1975, 1976, 1977, 1978, 1979, 1980, 1981, 1982, 1983, 1984, 1985, 1986, 1987, 1988, 1989, 1990, 1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019], "y": [0.0292, 0.0292, 0.0356, 0.0338, 0.0331, 0.0332, 0.0368, 0.032, 0.03, 0.0374, 0.0341, 0.0309, 0.0272, 0.043, 0.0559, 0.0413, 0.0455, 0.0592, 0.0572, 0.0645, 0.0503, 0.0573, 0.049, 0.0431, 0.0511, 0.0384, 0.0358, 0.0399, 0.0377, 0.0351, 0.0389, 0.0348, 0.0355, 0.0317, 0.0355, 0.0329, 0.032, 0.0273, 0.0226, 0.0205, 0.0287, 0.0362, 0.041, 0.0369, 0.0365, 0.0408, 0.0416, 0.0437, 0.0643, 0.0436, 0.052, 0.0601, 0.0578, 0.0496, 0.0578, 0.0612, 0.0569, 0.0508, 0.0596, 0.052]}],
-                        {"annotations": [{"showarrow": false, "text": "Data source:<a href=\"http://pages.stern.nyu.edu/~adamodar/\"> A. Damodaran</a>", "x": 0, "xref": "paper", "y": -0.15, "yref": "paper"}], "barmode": "stack", "height": 550, "hovermode": "x unified", "legend": {"font": {"family": "Roboto, Arial, sans-serif"}, "title": {"font": {"family": "Roboto, Arial, sans-serif"}, "text": "Asset class"}, "traceorder": "normal"}, "paper_bgcolor": "#f5f5f5", "template": {"data": {"bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "bar"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "barpolar"}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "choropleth": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "choropleth"}], "contour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour"}], "contourcarpet": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "contourcarpet"}], "heatmap": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap"}], "heatmapgl": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl"}], "histogram": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "histogram"}], "histogram2d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d"}], "histogram2dcontour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour"}], "mesh3d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "mesh3d"}], "parcoords": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "parcoords"}], "pie": [{"automargin": true, "type": "pie"}], "scatter": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter"}], "scatter3d": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter3d"}], "scattercarpet": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattercarpet"}], "scattergeo": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergeo"}], "scattergl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergl"}], "scattermapbox": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermapbox"}], "scatterpolar": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolar"}], "scatterpolargl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolargl"}], "scatterternary": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterternary"}], "surface": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}]}, "layout": {"annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "geo": {"bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white"}, "hoverlabel": {"align": "left"}, "hovermode": "closest", "mapbox": {"style": "light"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "ternary": {"aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "title": {"x": 0.05}, "xaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}, "yaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}}}, "title": {"font": {"family": "Roboto, Arial, sans-serif", "size": 20}, "text": "Implied Equity Risk Premium", "x": 0.45}, "updatemenus": [{"active": 0, "buttons": [{"args": [{"visible": [true, true, false]}], "label": "DDM", "method": "update"}, {"args": [{"visible": [true, false, true]}], "label": "FCFE", "method": "update"}], "direction": "right", "type": "buttons", "x": 0, "y": 1.2}], "xaxis": {"title": {"font": {"family": "Roboto, Arial, sans-serif"}, "text": "Year"}}, "yaxis": {"tickformat": ",.2%", "title": {"font": {"family": "Roboto, Arial, sans-serif"}, "text": "Value"}}},
+                        {"annotations": [{"showarrow": false, "text": "Data source:<a href=\"http://pages.stern.nyu.edu/~adamodar/\"> A. Damodaran</a>", "x": 0, "xref": "paper", "y": -0.15, "yref": "paper"}], "barmode": "stack", "height": 550, "hovermode": "x unified", "legend": {"font": {"family": "Roboto, Arial, sans-serif"}, "title": {"font": {"family": "Roboto, Arial, sans-serif"}, "text": "Asset class"}, "traceorder": "normal"}, "paper_bgcolor": "#f5f5f5", "template": {"data": {"bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "bar"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "barpolar"}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "choropleth": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "choropleth"}], "contour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour"}], "contourcarpet": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "contourcarpet"}], "heatmap": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap"}], "heatmapgl": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl"}], "histogram": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "histogram"}], "histogram2d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d"}], "histogram2dcontour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour"}], "mesh3d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "mesh3d"}], "parcoords": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "parcoords"}], "pie": [{"automargin": true, "type": "pie"}], "scatter": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter"}], "scatter3d": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter3d"}], "scattercarpet": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattercarpet"}], "scattergeo": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergeo"}], "scattergl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergl"}], "scattermapbox": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermapbox"}], "scatterpolar": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolar"}], "scatterpolargl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolargl"}], "scatterternary": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterternary"}], "surface": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}]}, "layout": {"annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "geo": {"bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white"}, "hoverlabel": {"align": "left"}, "hovermode": "closest", "mapbox": {"style": "light"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "ternary": {"aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "title": {"x": 0.05}, "xaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}, "yaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}}}, "title": {"font": {"family": "Roboto, Arial, sans-serif", "size": 20}, "text": "Implied Equity Risk Premium (US)", "x": 0.45}, "updatemenus": [{"active": 0, "buttons": [{"args": [{"visible": [true, true, false]}], "label": "DDM", "method": "update"}, {"args": [{"visible": [true, false, true]}], "label": "FCFE", "method": "update"}], "direction": "right", "type": "buttons", "x": 0, "y": 1.2}], "xaxis": {"title": {"font": {"family": "Roboto, Arial, sans-serif"}, "text": "Year"}}, "yaxis": {"tickformat": ",.2%", "title": {"font": {"family": "Roboto, Arial, sans-serif"}, "text": "Value"}}},
                         {"responsive": true}
                     )
                 };
@@ -141,98 +140,15 @@
             </script>                      
                              
 </div>
-<br><br>
+<br>
+				<b>Plot description</b><br><br>
 				<p style="text-align: justify;">
-				The table below displays the average historical risk premium over three relevant sub-periods: full sample (1928-2019); end of Bretton Woods up to date (1970-2019); financial crisis up to date (2010-2019). Note that the standard deviation is available only for the arithmetic average.</p><br><br>
-				<style>
-				table {
-				  font-family: arial, sans-serif;
-				  width: 100%;
-				}
+				This is an interactive plot. It displays the Implied ERP in the US market, computed as the implied excess return of stocks over 10-year US T. Bonds. The model used defaults to the Dividend Discout Model (DDM), but you can switch to the Free-Cash-Flow to Equity model clicking on the button (FCFE) in the top left corner.</p><br>
 
-				td, th {
-				  border: 1px solid #000000;
-				  text-align: left;
-				  padding: 8px;
-				}
-
-				tr:nth-child(even) {
-				  background-color: #dddddd;
-				}
-                                tr:nth-child(odd) {
-				  background-color: #ffffff;
-				}
-				</style>
-
-				<table style="width:100%">
-				  <tr>
-					<th></th>
-                    <th></th>
-					<th colspan="2">Arithmetic average</th>
-					<th colspan="2">Geometric average</th>
-				  </tr>
-                   
-				  <tr>
-					<th>Time Period</th>
-                    <th>Metric</th>
-					<th>Stocks - T.Bills</th>
-					<th>Stocks - T.Bonds</th>
-					<th>Stocks - T.Bills</th>
-					<th>Stocks - T.Bonds</th>
-				  </tr>
-				  <tr>
-					<th rowspan="2">1928-2019</th>
-                    <th>Average</th>
-					<td>8.18%</td>
-					<td>6.43%</td>
-					<td>6.35%</td>
-					<td>4.83%</td>
-				  </tr>
-				  <tr>
-					<th>Std Error</th>
-					<td>2.08%</td>
-					<td>2.20%</td>
-					<td>N/A</td>
-					<td>N/A</td>
-				  </tr>
-					<tr>
-					<th rowspan="2">1970-2019</th>
-                    <th>Average</th>
-					<td>7.26%</td>
-					<td>4.50%</td>
-					<td>5.93%</td>
-					<td>3.52%</td>
-				  </tr>
-					<tr>
-					<th>Std Error</th>
-					<td>2.38%</td>
-					<td>2.73%</td>
-					<td>N/A</td>
-					<td>N/A</td>
-				  </tr>
-					<tr>
-					<th rowspan="2">2010-2019</th>
-                    <th>Average</th>
-					<td>13.51%</td>
-					<td>9.67%</td>
-					<td>12.93%</td>
-					<td>9.31</td>
-				  </tr>
-					</tr>
-					<tr>
-					<th>Std Error</th>
-					<td>3.85%</td>
-					<td>4.87%</td>
-					<td>N/A</td>
-					<td>N/A</td>
-				</table>
-
+				<b>Summary table</b><br><br>
+				<p style="text-align: justify;">
+				The table below displays the average historical risk premium over three relevant sub-periods: full sample (1928-2019); end of Bretton Woods up to date (1970-2019); financial crisis up to date (2010-2019). The standard error is available only for the arithmetic average.</p><br><br>
 				
-				<!--graph here -->
-				<div>
-
-                
-				</div>
 				<br><br>
 				<h5 align= "right">Where does all the data come from? Check our <a href="../../about.html">source</a></h5>
 				</div>

@@ -108,15 +108,24 @@
 				<div class="row row-bottom-padded-md">
 				<p style="text-align: justify;">
 				<b>Description</b><br><br>
-				The Historical Risk Premium (HRP) is the premium that stocks have historically earned over riskless securities. It is the average annual excess return of stocks over a default-free security, in a given time window.<br><br>
-				<b>Factors affecting the estimate</b><br><br>
-				•	The time period used: the historical ERP is time dependent, so different time periods produce different estimates. Economic conditions vary in time and estimates based on shorter time periods are more updated. On the other hand, using the full sample we minimize the standard error and the estimate’s noise.<br>
-				•	The risk-free security: in computing the excess return, a reference risk-free asset must be chosen. It could be either a short or a long-term government security. What is crucial is being consistent with the risk-free rate used to estimate the cost of capital.<br>
-				•	Average type: the geometric average is the best unbiased estimate of the premium when returns are serially uncorrelated and the estimate refers to one year ahead. The geometric average is best suited when returns are serially correlated (empirically this is the case) and it adjusts for the long term view.<br><br>
-				<b>Limits</b><br><br>
-				•	This approach yields reasonable estimates only for mature economies like the United States, with a large and diversified equity market and a long history of returns. For emerging economies with relatively young markets, constraints on data availability make the historical average no longer a reliable measure of the ERP. However, even with long time periods of history, the estimate’s standard error is substantial.<br>
-				•	Another limit of this approach is the survivorship bias: using historical data from equity markets create a sampling bias because we consider only those company that “survived” up to date, ignoring the hundreds of companies that have failed.
-				</p><br>
+				The Historical Risk Premium (HRP) is the premium that stocks have historically earned over riskless securities. 
+				It is the average annual excess return of stocks over a default-free security, in a given time window.<br><br>
+            			Three main factors affect the estimate. The time period used: the historical ERP is time dependent, 
+				so different time periods produce different estimates. Economic conditions vary in time and estimates based on 
+				shorter time periods are more updated. On the other hand, using the full sample we minimize the standard error 
+				and the estimate’s noise. The risk-free security: in computing the excess return, a reference risk-free asset 
+				must be chosen. It could be either a short or a long-term government security. What is crucial is being consistent 
+				with the risk-free rate used to estimate the cost of capital. The average type: the geometric average is the best 
+				unbiased estimate of the premium when returns are serially uncorrelated and the estimate refers to one year ahead. 
+				The geometric average is best suited when returns are serially correlated (empirically this is the case) and it adjusts 
+				for the long term view.<br><br>
+				This approach yields reasonable estimates only for mature economies like the United States, with a large and diversified 
+				equity market and a long history of returns. For emerging economies with relatively young markets, constraints on data 
+				availability make the historical average no longer a reliable measure of the ERP. However, even with long time periods 
+				of history, the estimate’s standard error is substantial. Another limit of this approach is the survivorship bias: using 
+				historical data from equity markets create a sampling bias because we consider only those company that “survived” up to 
+				date, ignoring the hundreds of companies that have failed.
+				</p><br><br>
 				<!-- graph here -->
 <div>
                 <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
@@ -194,7 +203,7 @@
 					<td>8.18%</td>
 					<td>6.43%</td>
 					<td>6.35%</td>
-					<td>4.83%</td>
+					<td style="color:red">4.83%</td>
 				  </tr>
 				  <tr>
 					<th>Std. Error</th>
@@ -224,7 +233,7 @@
 					<td>13.51%</td>
 					<td>9.67%</td>
 					<td>12.93%</td>
-					<td>9.31</td>
+					<td>9.31%</td>
 				  </tr>
 					</tr>
 					<tr>

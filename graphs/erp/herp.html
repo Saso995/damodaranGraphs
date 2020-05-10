@@ -111,27 +111,37 @@
 				The Historical Risk Premium (HRP) is the premium that stocks have historically earned over riskless securities. 
 				It is the average annual excess return of stocks over a default-free security, in a given time window.<br><br>
             			Three main factors affect the estimate:<br>
-				•	The time period used: the historical ERP is time dependent, so different time periods produce different estimates. 
+				<ul>
+				<li>The time period used: the historical ERP is time dependent, so different time periods produce different estimates. 
 				Economic conditions vary in time and estimates based on 
 				shorter time periods are more updated. On the other hand, using the full sample we minimize the standard error 
-				and the estimate’s noise.<br>
-				•	The risk-free security: in computing the excess return, a reference risk-free asset 
+				and the estimate’s noise</li>
+				<li>The risk-free security: in computing the excess return, a reference risk-free asset 
 				must be chosen. It could be either a short or a long-term government security. What is crucial is being consistent 
-				with the risk-free rate used to estimate the cost of capital.<br>
-				•	The average type: the geometric average is the best 
+				with the risk-free rate used to estimate the cost of capital</li>
+				<li>The average type: the geometric average is the best 
 				unbiased estimate of the premium when returns are serially uncorrelated and the estimate refers to one year ahead. 
 				The geometric average is best suited when returns are serially correlated (empirically this is the case) and it adjusts 
-				for the long term view.<br><br>
+				for the long term view</li></ul>
 				This approach yields reasonable estimates only for mature economies like the United States, with a large and diversified 
 				equity market and a long history of returns. For emerging economies with relatively young markets, constraints on data 
 				availability make the historical average no longer a reliable measure of the ERP. However, even with long time periods 
 				of history, the estimate’s standard error is substantial. Another limit of this approach is the survivorship bias: using 
 				historical data from equity markets create a sampling bias because we consider only those company that “survived” up to 
 				date, ignoring the hundreds of companies that have failed.<br><br>
-				<b>Plot description</b><br><br>
-				This is an interactive plot. It displays the Historical Risk Premium in the US market and information on stocks’ relative 
-				performance year-by-year. Every year, the Historical premium is computed as the geometric average excess return of stocks over 10-year US T. Bonds, 
-				over the full sample up to that date. The S&P 500 is used as a proxy of the market portfolio. The 10-year US T. Bond 
+				<b>Plot info</b><br><br>
+				The plot displays the Historical Risk Premium in the US market and information on stocks’ relative 
+				performance year-by-year. Select the trace you want to be displayed by clicking on the legend. Use the slider or select 
+				an area of the plot to focus on a given sub-period. Note that in the top-right corner you can access few more features.<br><br>
+				Data explanation:<br><br>
+				<ul>
+				<li>Historical Risk premium: it is the geometric average excess return of stocks over 10-year US T. Bonds, 
+				over the full sample up to that date</li>
+				<li>Stocks - Bills: stock's excess return over short term government bonds</li>
+				<li>Stocks - Bonds: stock's excess return over long term government bonds</li>
+				<li>Stocks - Baa Corp Bond: stock's excess return over corporate bonds</li>
+				</ul>
+				The S&P 500 is used as a proxy of the market portfolio. The 10-year US T. Bond 
 				and the 3-month US T. Bill are used as proxies of the long-term and short-term risk-free asset, respectively.
 				Select the trace you want to be displayed by clicking on the legend. Use the slider or select 
 				an area of the plot to focus on a given sub-period. Note that in the top-right corner you can access few more features.
@@ -253,7 +263,9 @@
 				In business valuation, we generally assume the investment's expected life is infinite and the discount rate should reflect 
 				this long term view. Given the considerations above, the geometric average premium over US T. Bonds, based on the full 
 				sample, seems to be the most appropriate proxy of the ERP among those available within the HRP scope. It reflects the 
-				assumptions on expected life and adjusts for returns' autocorrelation.</p><br><br>
+				assumptions on expected life and adjusts for returns' autocorrelation. <br><br>
+				Note: all the data below can be used to compute the dollar cost of equity. To convert this dollar cost of equity into a cost of equity in the local currency, 
+				all you need to do is to scale the estimate by relative inflation (risk free rate conversion kind approach).</p><br><br>
 
 				
 				<br><br>

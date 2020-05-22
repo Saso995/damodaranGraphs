@@ -112,20 +112,9 @@
 				the systematic risk is not diversifiable as opposed to idiosyncratic risk. It is the only type of risk remunerated by 
 				the market and it enters in the CAPM formula used to compute the cost of capital.<br><br>
 				<b>Plot info</b><br><br>
-				For each combination (market, industry) a set of information is displayed. Select the market (US, EU, Japan, ...) 
-				using the buttons below. Select the desired industry among those available in the legend on the right. One click to activate the trace, double 
-				click to deactivate it. You can activate more than one industry to make comparisons.<br><br>
-				Data explanation:<br>
-				<ul>
-				<li>Beta: it is the simple average across firms of each firm's  beta, taken as a weighted average of 2-year and 5-year weekly return regression betas, with 2-year betas weighted 2/3rds. If the company has only a 2-year beta, this one is used</li>
-				<li>Unlevered Beta corrected for cash: Unlevered Beta/ (1- Cash/Firm Value). Cash has a beta of zero</li>
-				<li>Unlevered Beta: Beta/ (1+ (1-tax rate) (D/E)). The effective tax rate has been used</li>
-				<li>Hi-Lo Risk: simple average of (High Price for year - Low Price)/(High Price + Low Price). It is a non-parametric and simple measure of price risk</li>			
-				<li>Standard deviation of equity: simple average across firms of each firm's standard deviation in stock prices in the prior 2 years, using weekly returns</li>
-				<li>Standard deviation of operating income): simple average across firms of each firm's coefficient of variation in annual operating income over prior 10 years. (Coefficient of variation is standard deviation divided by average operating income over the period)</li>
-				<li>D/E Ratio: total debt, including lease debt/market value of equity. The numerators and denominators have been aggregated before computing the ratio</li>
-				<li>Cash/Firm Value:  Cash & Marketable Securities/ (Market Value of Equity + Total Debt, including lease debt). The numerators and denominators have been aggregated before computing the ratio</li>
-				<li>Effective tax rate: effective tax rate in the most recent 12 months</li>
+				Interactive bar chart: The plot displays a set of information is displayed for each combination (market, industry). Select first the market (US, EU, Japan, ...) 
+				using the buttons below. Then, selct the desired industry among those available in the legend on the right. One click to activate the trace, double 
+				click to deactivate it. You can activate more than one industry to make comparisons. In the top-left corner you can access additional features.<br><br>
 				</p>
 <div>
        
@@ -153,6 +142,22 @@
                 
             </script>
 </div>
+				<div>
+				<p style="text-align: justify;">
+				<b>Data explanation</b>
+				<ul>
+				<li>Beta: it is the simple average across firms of each firm's  beta, taken as a weighted average of 2-year and 5-year weekly return regression betas, with 2-year betas weighted 2/3rds. If the company has only a 2-year beta, this one is used</li>
+				<li>Unlevered Beta corrected for cash: Unlevered Beta/ (1- Cash/Firm Value). Cash has a beta of zero</li>
+				<li>Unlevered Beta: Beta/ (1+ (1-tax rate) (D/E)). The effective tax rate has been used</li>
+				<li>Hi-Lo Risk: simple average of (High Price for year - Low Price)/(High Price + Low Price). It is a non-parametric and simple measure of price risk</li>			
+				<li>Standard deviation of equity: simple average across firms of each firm's standard deviation in stock prices in the prior 2 years, using weekly returns</li>
+				<li>Standard deviation of operating income): simple average across firms of each firm's coefficient of variation in annual operating income over prior 10 years. (Coefficient of variation is standard deviation divided by average operating income over the period)</li>
+				<li>D/E Ratio: total debt, including lease debt/market value of equity. The numerators and denominators have been aggregated before computing the ratio</li>
+				<li>Cash/Firm Value:  Cash & Marketable Securities/ (Market Value of Equity + Total Debt, including lease debt). The numerators and denominators have been aggregated before computing the ratio</li>
+				<li>Effective tax rate: effective tax rate in the most recent 12 months</li></ul>
+				Last update: Jan 2020
+				</p>
+				</div>
 				<br><br>
 				<h5 align= "right">Where does all the data come from? Check our <a href="../../about.html">source</a></h5>
 				</div>

@@ -67,7 +67,7 @@
 		<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
 		<aside id="fh5co-aside" role="complementary" class="border js-fullheight">
 
-			<h1 id="fh5co-logo"><a href="../../index.html">Valuator</a></h1>
+			<h1 id="fh5co-logo"><a href="../../index.html">Valuator<i class="icon-twitter2"></i></a></h1>
 			<nav id="fh5co-main-menu" role="navigation">
 				<ul>
 					<li><a href="../../index.html">Home</a></li>
@@ -109,7 +109,7 @@
 				<p style="text-align: justify;">
 				<b>Description</b><br><br>
 				The Historical Risk Premium (HRP) is the premium that stocks have historically earned over riskless securities. 
-				It is the average annual excess return of stocks over a default-free security, in a given time window.<br><br>
+				It is the average annual excess return of stocks over a default-free security, in a given time period.<br><br>
             			Three main factors affect the estimate:<br>
 				<ul>
 				<li>The time period used: the historical ERP is time dependent, so different time periods produce different estimates. 
@@ -119,7 +119,7 @@
 				<li>The risk-free security: in computing the excess return, a reference risk-free asset 
 				must be chosen. It could be either a short or a long-term government security. What is crucial is being consistent 
 				with the risk-free rate used to estimate the cost of capital</li>
-				<li>The average type: the geometric average is the best 
+				<li>The average type: the arithmetic average is the best 
 				unbiased estimate of the premium when returns are serially uncorrelated and the estimate refers to one year ahead. 
 				The geometric average is best suited when returns are serially correlated (empirically this is the case) and it adjusts 
 				for the long term view</li></ul>
@@ -130,21 +130,9 @@
 				historical data from equity markets create a sampling bias because we consider only those company that “survived” up to 
 				date, ignoring the hundreds of companies that have failed.<br><br>
 				<b>Plot info</b><br><br>
-				The plot displays the Historical Risk Premium in the US market and information on stocks’ relative 
+				Interactive line chart: the plot displays the Historical Risk Premium in the US market and information on stocks’ relative 
 				performance year-by-year. Select the trace you want to be displayed by clicking on the legend. Use the slider or select 
-				an area of the plot to focus on a given sub-period. Note that in the top-right corner you can access few more features.<br><br>
-				Data explanation:<br><br>
-				<ul>
-				<li>Historical Risk premium: it is the geometric average excess return of stocks over 10-year US T. Bonds, 
-				over the full sample up to that date</li>
-				<li>Stocks - Bills: stock's excess return over short term government bonds</li>
-				<li>Stocks - Bonds: stock's excess return over long term government bonds</li>
-				<li>Stocks - Baa Corp Bond: stock's excess return over corporate bonds</li>
-				</ul>
-				The S&P 500 is used as a proxy of the market portfolio. The 10-year US T. Bond 
-				and the 3-month US T. Bill are used as proxies of the long-term and short-term risk-free asset, respectively.
-				Select the trace you want to be displayed by clicking on the legend. Use the slider or select 
-				an area of the plot to focus on a given sub-period. Note that in the top-right corner you can access few more features.
+				an area of the plot to focus on a given sub-period. In the top-right corner you can access additional features.
 				</p>
 <div>
                 <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
@@ -174,7 +162,7 @@
 				<br>
 				<b>Summary table</b><br><br>
 				<p style="text-align: justify;">
-				The table below displays the average historical risk premium over three relevant sub-periods: full sample (1928-2019); end of Bretton Woods up to date (1970-2019); financial crisis up to date (2010-2019). The standard error is available only for the arithmetic average.</p><br><br>
+				The table below displays the average historical risk premium over three relevant sub-periods: full sample (1928-2019); end of Bretton Woods up to date (1970-2019); financial crisis up to date (2010-2019). The standard error is available only for the arithmetic average.</p>
 				<style>
 				table {
 				  font-family: arial, sans-serif;
@@ -256,16 +244,27 @@
 					<td>4.87%</td>
 					<td>N/A</td>
 					<td>N/A</td>
-				</table>
-				<br><br>
+				</table><br>
+				<p style="text-align: justify;">
+				<b>Data explanation</b>
+				<ul>
+				<li>Historical Risk premium: it is the geometric average excess return of stocks over 10-year US T. Bonds, 
+				over the full sample up to that date</li>
+				<li>Stocks - Bills: stock's excess return over short term government bonds</li>
+				<li>Stocks - Bonds: stock's excess return over long term government bonds</li>
+				<li>Stocks - Baa Corp Bond: stock's excess return over corporate bonds</li>
+				</ul>
+				The S&P 500 is used as a proxy of the market portfolio. The 10-year US T. Bond 
+				and the 3-month US T. Bill are used as proxies of the long-term and short-term risk-free asset, respectively..<br><br>
+				Note: all the data below can be used to compute the dollar cost of equity. To convert this dollar cost of equity into a cost of equity in the local currency, 
+				all you need to do is to scale the estimate by relative inflation (risk free rate conversion kind approach).
+				</p>
 				<b>Final consideration</b><br><br>
 				<p style="text-align: justify;">
 				In business valuation, we generally assume the investment's expected life is infinite and the discount rate should reflect 
 				this long term view. Given the considerations above, the geometric average premium over US T. Bonds, based on the full 
 				sample, seems to be the most appropriate proxy of the ERP among those available within the HRP scope. It reflects the 
-				assumptions on expected life and adjusts for returns' autocorrelation. <br><br>
-				Note: all the data below can be used to compute the dollar cost of equity. To convert this dollar cost of equity into a cost of equity in the local currency, 
-				all you need to do is to scale the estimate by relative inflation (risk free rate conversion kind approach).</p><br><br>
+				assumptions on expected life and adjusts for returns' autocorrelation.</p>
 
 				
 				<br><br>

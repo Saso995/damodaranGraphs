@@ -112,12 +112,8 @@
 				On the other hand, the estimate is bounded to the specific model used for the valuation and its reliability depends on the inputs to that model. The Implied ERP varies over time as interest rates, earnings and stock prices change.
 				Moreover, it can be very different from the historical premium. A possible way to smooth its variability is to use the average implied premium.<br><br>
 				<b>Plot info</b><br><br>
-				This is an interactive plot. It displays the Implied ERP in the US market, computed as the implied excess return of stocks over 10-year US T. Bonds. Two sets of estimates are provided and they're based on two different valuation models. Using the buttons in the top-left corner you can swich from Free-Cash-Flow to Equity (FCFE) to the Dividend Discount Model (DDM).<br><br>
-				Data explanation:<br>
-				<ul>
-				<li>T.Bond rate: annual nominal return on US T. Bond</li>
-				<li>Implied premium: implied market cost of capital - T. Bond rate (Assumption: beta=1)</li>
-				</ul>
+				Interactive bar chart. the plot displays the Implied ERP in the US market, computed as the implied excess return of stocks over 10-year US T. Bonds. Two sets of estimates are provided and they're based on two different valuation models. Using the buttons in the top-left corner you can swich from Free-Cash-Flow to Equity (FCFE) to the Dividend Discount Model (DDM). 
+				In the top-right corner you can access additional features. 
 				</p>
 <div>
 
@@ -146,17 +142,20 @@
             </script>        
                
 </div>
-<br>
-				
+				<p style="text-align: justify;">
+				<b>Data explanation</b><br>
+				<ul>
+				<li>T.Bond rate: annual nominal return on US T. Bond</li>
+				<li>Implied premium: implied market cost of capital - T. Bond rate (Assumption: beta=1)</li>
+				</ul>
+				Note: all the data below can be used to compute the dollar cost of equity. To convert this dollar cost of equity into a cost of equity in the local currency, 
+				all you need to do is to scale the estimate by relative inflation (risk free rate conversion kind approach).<br><br>
 				<b>Final consideration</b><br><br>
 				<p style="text-align: justify;">
 				Considering that there is a strong mean reversion tendency in the markets, it’s best advised to use an average implied 
 				equity premium over long periods (10-15 years). For example, after the financial crises (2010-2019), the implied ERP has 
-				remained quite stable around 5.58% using the FCFE. Damodaran's suggest to use the current implied ERP (6.01%).<br><br>
-				Note: all the data below can be used to compute the dollar cost of equity. To convert this dollar cost of equity into a cost of equity in the local currency, 
-				all you need to do is to scale the estimate by relative inflation (risk free rate conversion kind approach).</p><br><br>
-				
-				<br><br>
+				remained quite stable around 5.58% using the FCFE.<br><br>
+				</p>
 				<h5 align= "right">Where does all the data come from? Check our <a href="../../about.html">source</a></h5>
 				</div>
 			</div>

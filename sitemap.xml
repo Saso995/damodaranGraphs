@@ -9,82 +9,112 @@
 
 <url>
   <loc>https://valuator.it/</loc>
-  <lastmod>2020-05-08T20:15:35+00:00</lastmod>
+  <lastmod>2020-06-24T15:13:13+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://valuator.it/index.html</loc>
-  <lastmod>2020-05-08T20:15:35+00:00</lastmod>
+  <lastmod>2020-06-24T15:13:13+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://valuator.it/discount_rate.html</loc>
-  <lastmod>2020-05-08T20:15:35+00:00</lastmod>
+  <lastmod>2020-06-24T15:13:13+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://valuator.it/multiples.html</loc>
+  <lastmod>2020-06-24T15:13:13+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://valuator.it/about.html</loc>
-  <lastmod>2020-05-08T20:15:35+00:00</lastmod>
+  <lastmod>2020-06-24T15:13:13+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://valuator.it/contact.html</loc>
-  <lastmod>2020-05-08T20:15:35+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://valuator.it/graphs/erp/intro.html</loc>
+  <lastmod>2020-06-24T15:13:13+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://valuator.it/graphs/erp/main.html</loc>
-  <lastmod>2020-05-08T20:15:35+00:00</lastmod>
+  <lastmod>2020-06-24T15:13:13+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://valuator.it/graphs/beta/main.html</loc>
-  <lastmod>2020-05-08T20:15:35+00:00</lastmod>
+  <lastmod>2020-06-24T15:13:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://valuator.it/graphs/ccis/ccis.html</loc>
+  <lastmod>2020-06-24T15:13:13+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://valuator.it/graphs/tr/main.html</loc>
-  <lastmod>2020-05-08T20:15:35+00:00</lastmod>
+  <lastmod>2020-06-24T15:13:13+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://valuator.it/graphs/erp/herp.html</loc>
-  <lastmod>2020-05-08T20:15:35+00:00</lastmod>
-  <priority>0.51</priority>
+  <loc>https://valuator.it/graphs/multiples/intro.html</loc>
+  <lastmod>2020-06-24T15:13:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://valuator.it/graphs/multiples/earnings.html</loc>
+  <lastmod>2020-06-24T15:13:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://valuator.it/graphs/multiples/bookvalue.html</loc>
+  <lastmod>2020-06-24T15:13:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://valuator.it/graphs/multiples/sales.html</loc>
+  <lastmod>2020-06-24T15:13:13+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://valuator.it/graphs/multiples/ebit.html</loc>
+  <lastmod>2020-06-24T15:13:13+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>https://valuator.it/graphs/erp/ierp.html</loc>
-  <lastmod>2020-05-08T20:15:35+00:00</lastmod>
+  <lastmod>2020-06-24T15:13:13+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://valuator.it/graphs/erp/herp.html</loc>
+  <lastmod>2020-06-24T15:13:13+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://valuator.it/graphs/erp/rpom.html</loc>
-  <lastmod>2020-05-08T20:15:35+00:00</lastmod>
+  <lastmod>2020-06-24T15:13:13+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://valuator.it/graphs/beta/lubi.html</loc>
-  <lastmod>2020-05-08T20:15:35+00:00</lastmod>
+  <lastmod>2020-06-24T15:13:13+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://valuator.it/graphs/beta/tbis.html</loc>
-  <lastmod>2020-05-08T20:15:35+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://valuator.it/graphs/beta/rmmcc.html</loc>
-  <lastmod>2020-05-08T20:15:35+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://valuator.it/graphs/tr/tri.html</loc>
-  <lastmod>2020-05-08T20:15:35+00:00</lastmod>
+  <lastmod>2020-06-24T15:13:13+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 <url>
   <loc>https://valuator.it/graphs/tr/mtrc.html</loc>
-  <lastmod>2020-05-08T20:15:35+00:00</lastmod>
+  <lastmod>2020-06-24T15:13:13+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://valuator.it/graphs/tr/tri.html</loc>
+  <lastmod>2020-06-24T15:13:13+00:00</lastmod>
   <priority>0.51</priority>
 </url>
 
